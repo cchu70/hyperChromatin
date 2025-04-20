@@ -1,0 +1,6 @@
+[submodule "src/PoincareMaps"]
+	path = src/PoincareMaps
+	url = git@github.com:facebookresearch/PoincareMaps.git
+[submodule "src/scDHMap"]
+	path = src/scDHMap
+	url = git@github.com:ttgump/scDHMap.git
