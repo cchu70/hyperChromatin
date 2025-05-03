@@ -4,3 +4,9 @@
 [submodule "src/scDHMap"]
 	path = src/scDHMap
 	url = git@github.com:ttgump/scDHMap.git
+[submodule "src/scPhere"]
+	path = src/scPhere
+	url = git@github.com:klarman-cell-observatory/scPhere.git
+[submodule "src/simba_pbg"]
+	path = src/simba_pbg
+	url = git@github.com:pinellolab/simba_pbg.git
