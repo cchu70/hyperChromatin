@@ -30,6 +30,9 @@ pip install scanpy
 ```bash
 cd src
 git submodule add git@github.com:facebookresearch/PoincareMaps.git
+
+source env/hyperChrom_pyenv/bin/activate
+pip install fastdtw
 ```
 
 ## scDHMap

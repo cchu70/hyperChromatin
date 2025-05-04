@@ -1,9 +1,7 @@
+import seaborn as sns
 
 # Seaborn colorblind palette
-celltype_colors = {
-    'TAC-1': (0.00392156862745098, 0.45098039215686275, 0.6980392156862745),
-    'TAC-2': (0.8352941176470589, 0.3686274509803922, 0.0),
-    'IRS': (0.8705882352941177, 0.5607843137254902, 0.0196078431372549),
-    'Medulla': (0.00784313725490196, 0.6196078431372549, 0.45098039215686275),
-    'Hair Shaft-cuticle.cortex': (0.8, 0.47058823529411764, 0.7372549019607844)
- }
+cell_types = ['TAC-1', 'TAC-2', 'IRS', 'Medulla', 'Hair Shaft-cuticle.cortex']
+pal = sns.color_palette('colorblind', len(cell_types)).as_hex()
+
+celltype_colors = dict(zip(cell_types, pal))
