@@ -24,6 +24,13 @@ cd simba_pbg
 pip install -e .
 
 pip install scanpy
+
+# umap issues
+pip install --upgrade tbb
+pip install --upgrade --force-reinstall scanpy
+pip install tbb-devel
+# pip install --upgrade --force-reinstall numba
+pip install numba==0.56.2
 ```
 
 ## Poincare map

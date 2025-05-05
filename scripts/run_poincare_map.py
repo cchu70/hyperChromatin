@@ -19,7 +19,16 @@ rna_simba_name = '../results/02/rna_simba.celltype_label'
 atac_pca_name = '../results/02/atac_pca.celltype_label'
 atac_std_pca_name = '../results/02/atac_std_pca.celltype_label'
 atac_simba_name = '../results/02/atac_simba.celltype_label'
-simba_multi_name = '../results/02/simba_multi.celltype_label'
+simba_multi_name = '../results/02/multi_simba.celltype_label'
+
+features_names = {
+    "RNA PCA": rna_pca_name, 
+    "RNA Simba": rna_simba_name, 
+    "ATAC PCA": atac_pca_name, 
+    "ATAC PCA (standard)": atac_std_pca_name, 
+    "ATAC Simba": atac_simba_name, 
+    "Simba Multi": simba_multi_name
+}
 
 def run_poincare_map(file_name, output_name, epochs=1000, lr=0.1):
     print(f'Running {file_name}...')
@@ -59,8 +68,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     file_names = [
-        rna_pca_name, rna_simba_name, 
-        atac_pca_name, atac_std_pca_name,atac_simba_name, simba_multi_name
+        # rna_pca_name, 
+        rna_simba_name, 
+        # atac_std_pca_name,atac_simba_name, 
+        # simba_multi_name
     ]
     epochs = args.epochs
     lr = args.lr
