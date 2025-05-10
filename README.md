@@ -2,6 +2,10 @@
 
 APPMTH 220 course project - application of hyperbolic spaces for representing single cell lineage using chromatin accessibility.
 
+## Interactive plot demo
+See notebook 10
+
+<img src="https://github.com/cchu70/hyperChromatin/raw/main/interactive_poincare_ball.gif" width="400"/>
 
 # Installation
 
